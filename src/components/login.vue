@@ -49,7 +49,7 @@ export default {
     methods:{
         loginSubmit:function(){
             //预验证
-            this.$refs.loginFormRef.validate(async(valid)=>{
+            this.$refs.loginFormRef.validate(async valid=>{
                 if(!valid) return;
                 //登录请求待完成
                 this.$message.success("登录成功")
